@@ -3,6 +3,8 @@ function iterate(i) {
   //$('#table').append('<li class="list-group-item"><span>`${list[i]} is making </span></li>')
 }
 total = 0;
+salery = 100;
+var money
 function appendlist() {
   name = document.getElementById("Name").value;
   ele = document.getElementsByName("jobs");
@@ -10,27 +12,34 @@ function appendlist() {
     if (ele[i].checked) Job = ele[i].value;
   }
   job_list = ["Lawyer", 0.1, "Trainer", 0.05, "Maid", 0.01, "Assassin", 0.25];
-  inputList = [name, Job];
-  console.log(inputList);
-  for (let i = 0; i < inputList.length; index += 2) {
+  inputList = [[name, Job]];
+  console.log(inputList[0]);
+  for (let i = 0; i < inputList.length; i += 2) {
     switch (inputList[i + 1]) {
       case job_list[1]:
         total = job_list[2];
+        money = salery * job_list[2];
         break;
       case job_list[3]:
         total = job_list[4];
+        money = salery * job_list[4];
         break;
       case job_list[5]:
         total = job_list[6];
+        money = salery * job_list[6];
         break;
       case job_list[7]:
         total = job_list[8];
+        money = salery * job_list[8];
         break;
-        
+    console.log(money);
     }
-    insert = `<li class="list-group-item"><span>${inputList[i]}, ${
+
+    console.log(money);
+    insert = `<li class="list-group-item"><span>${inputList.splice(-1)}, ${
       inputList[i + 1]
-    } is making </span></li>`;
+    } is making ${money}
+    </span></li>`;
     $("#table").append(insert);
   }
 
