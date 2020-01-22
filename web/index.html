@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>gui-python</title>
+    <meta name="description" content="A simple gui app for python using eel">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Name:&nbsp;</p>
+                    <input type="text" id="Name">
+
+                    <div class="form-check"><input class="form-check-input" type="radio" name="jobs" value="Lawyer"><label class="form-check-label" for="formCheck-1">Lawyer</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="jobs" value="Trainer"><label class="form-check-label" for="formCheck-4">Trainer</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="jobs" value="Maid"><label class="form-check-label" for="formCheck-3">Maid</label></div>
+                    <div class="form-check"><input class="form-check-input" type="radio" name="jobs" value="Assassin"><label class="form-check-label" for="formCheck-2">Assassin</label></div>
+                  <button onclick="appendlist()">Submit</button>
+
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <div id="table">
+                        </div>
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p>Paragraph</p>
+                    <p>Paragraph</p>
+                    <p>Paragraph</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
