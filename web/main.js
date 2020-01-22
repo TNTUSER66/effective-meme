@@ -14,7 +14,7 @@ job_list = ["Lawyer", .1,
 "Trainer", .05,
 "Maid", .01,
 "Assassin", .25,]
-  inputList P= [name, Job];
+  inputList = [name, Job];
   console.log(inputList)
   for (let i = 0; i < inputList.length; index += 2) {
     switch(inputList[i+1]){
