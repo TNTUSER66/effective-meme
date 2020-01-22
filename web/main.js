@@ -17,9 +17,16 @@ function appendlist() {
       case job_list[1]:
         total = job_list[2];
         break;
-      case job_list[1]:
-        total = job_list[2];
+      case job_list[3]:
+        total = job_list[4];
         break;
+      case job_list[5]:
+        total = job_list[6];
+        break;
+      case job_list[7]:
+        total = job_list[8];
+        break;
+        
     }
     insert = `<li class="list-group-item"><span>${inputList[i]}, ${
       inputList[i + 1]
